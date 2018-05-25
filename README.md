@@ -13,3 +13,5 @@
 
 1. [D1 : Hello World](D1HelloWorld/src/hello_world.kt)
 2. [D2 : Functions](D1Functions/src/functions.kt)
+3. [D3 : Strings](D3Strings/src/StringTemplates.kt)
+4. [D4 : Classes](D4Classes/src)

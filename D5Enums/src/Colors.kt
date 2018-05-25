@@ -1,4 +1,4 @@
-package d5Enumns.colors
+package d5Enumns
 
 enum class Colors(val r: Int, val g: Int, val b: Int) {
     VIOLET(238, 130, 238), INDIGO(75, 0,130),
