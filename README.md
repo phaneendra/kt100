@@ -15,3 +15,5 @@
 2. [D2 : Functions](D1Functions/src/functions.kt)
 3. [D3 : Strings](D3Strings/src/StringTemplates.kt)
 4. [D4 : Classes](D4Classes/src)
+5. [D5 : Enums](D5Enums/src/Colors.kt)
+6. [D6 : Loops](D6Loops/src/main/kotlin)

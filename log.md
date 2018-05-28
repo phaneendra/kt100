@@ -36,3 +36,14 @@ In the text box, fill this:
 
 1. [D4 : Classes](D4Classes/src)
 2. [D5 : Enums](D5Enums/Colors)
+
+
+### Day 4: May 28, Monday
+
+**Today's Progress**: Loops and When.
+
+**Thoughts** Learned how to use loops using when to access enum data, Also how to setup gradle for Kotlin project using gradle Kotlin DSL.
+
+**Link(s) to work**
+
+1. [D6 : Loops](D6Loops/src/main/kotlin)
