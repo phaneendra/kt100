@@ -1,0 +1,4 @@
+package samples
+
+class colors {
+}
