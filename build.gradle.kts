@@ -1,48 +1,28 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-buildscript {
-    var kotlin_version: String by extra
-    kotlin_version = "1.2.41"
+plugins {
+    base
+    kotlin("jvm") version "1.2.41" apply false
+}
 
+allprojects {
+    group = "samples"
+    version = "1.0"
     repositories {
         mavenCentral()
     }
-    dependencies {
-        classpath(kotlinModule("gradle-plugin", kotlin_version))
+}
+
+subprojects {
+    tasks.withType<KotlinCompile> {
+        println("Configuring $name in ${project.name}")
+        kotlinOptions.jvmTarget = "1.8"
     }
 }
 
-plugins {
-    java
-    application
-    kotlin("jvm") version "1.2.41"
-}
-
-group = "samples"
-version = "1.0-SNAPSHOT"
-
-apply {
-    plugin("kotlin")
-}
-
-application {
-    mainClassName = "samples.WhenWithEnumsKt"
-}
-
-val kotlin_version: String by extra
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    compile(kotlinModule("stdlib-jdk8", kotlin_version))
-    testCompile("junit", "junit", "4.12")
+    subprojects.forEach {
+        archives(it)
+    }
 }
 
-configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-}
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}

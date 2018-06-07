@@ -17,3 +17,6 @@
 4. [D4 : Classes](D4Classes/src)
 5. [D5 : Enums](D5Enums/src/Colors.kt)
 6. [D6 : Loops](D6Loops/src/main/kotlin)
+7. [D7 : Ranges](D6Ranges/src)
+8. [D8 : TryCatch](D8TryCatch/src)
+9. [D9 : Collections](D9Collections/src)
